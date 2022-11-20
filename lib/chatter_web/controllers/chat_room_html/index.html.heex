@@ -1,7 +1,11 @@
-<h1 class="title">Welcome to Chatter!</h1>
+<h1 class='title'>Welcome to Chatter!</h1>
 
 <ul>
-  <%= for room <- @chat_rooms do %>
-    <li data-role="room"><%= room.name %></li>
-  <% end %>
+    <%= for room <- @chat_rooms do %>
+        <li data-role='room'><%= room.name %></li>
+    <% end %>
 </ul>
+
+<div>
+<.link href={~p"/chat_rooms/new"}>New chat room"</.link>
+</div>

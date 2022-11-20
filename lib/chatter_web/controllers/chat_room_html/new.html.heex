@@ -1,0 +1,7 @@
+  <.simple_form :let={f} for={@changeset} action={~p"/chat_rooms"}>
+    <.input field={{f, :name}} label="Name" />
+
+    <:actions>
+      <.button>Submit</.button>
+    </:actions>
+  </.simple_form>

@@ -24,6 +24,8 @@ defmodule ChatterWeb.ConnCase do
 
       use ChatterWeb, :verified_routes
 
+      alias ChatterWeb.Router.Helpers, as: Routes
+
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
